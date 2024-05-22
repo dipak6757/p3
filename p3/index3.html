@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>
+		
+	</title>
+	<link href=
+"https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+		rel="stylesheet">
+	<script src=
+"https://code.jquery.com/jquery-1.10.2.js">
+	</script>
+	<script src=
+"https://code.jquery.com/ui/1.10.4/jquery-ui.js">
+	</script>
+	<style>
+		h1, h3 {
+			text-align: center;
+		}
+
+		#GG {
+			width: 600px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color: green;">
+        <h3>wellcome</h3>
+	</h1>
+	
+	<div id="GG">
+		<h3>HTML</h3>
+		<div>
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime quia blanditiis ipsa praesentium minus id placeat! Iure qui dignissimos nulla rerum esse velit beatae saepe magni aliquid quos. Sapiente!
+		</div>
+		<h3>CSS</h3>
+		<div>
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime quia blanditiis ipsa praesentium minus id placeat! Iure qui dignissimos nulla rerum esse velit beatae saepe magni aliquid quos. Sapiente!
+		</div>
+		<h3>JavaScript</h3>
+		<div>
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime quia blanditiis ipsa praesentium minus id placeat! Iure qui dignissimos nulla rerum esse velit beatae saepe magni aliquid quos. Sapiente!
+		</div>
+		<h3>Bootstrap</h3>
+		<div>
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime quia blanditiis ipsa praesentium minus id placeat! Iure qui dignissimos nulla rerum esse velit beatae saepe magni aliquid quos. Sapiente!
+		</div>
+	</div>
+
+	<script>
+		$(document).ready(function () {
+			$("#GG").on("accordioncreate", function() {
+				alert("Accordion Create Event Triggered!");
+			});
+
+			$("#GG").accordion();
+		});
+	</script>
+</body>
+</html>
